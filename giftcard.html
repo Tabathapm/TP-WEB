@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/estiloGeneral.css">
+    <link rel="stylesheet" href="CSS/estiloGiftcard.css">
+    <script src="js/carrito.js"></script>
+    <title>Gift Card</title>
+</head>
+<body>
+    <header>
+        <div id="barraDeArriba">
+            <div class="logoynombre">
+              <div id="logo">
+                <a href="index.html"><img src="Imagenes/logo.png" width="70" alt=""></a>
+              </div>
+
+              <div id="titulo">
+                <h2>Mortal Learning</h2>
+              </div>
+            </div>
+            
+            <div id="barradebusqueda">
+                <form action="">            
+                    <input type="search" list="browsers" class="buscador"placeholder="Busca un curso de tu interes">
+                        <datalist id="browsers">
+                            <option value="Java">
+                            <option value="SQL Server">
+                            <option value="Android">
+                            <option value="Diseño Gráfico">
+                            <option value="iOS">
+                            <option value="Javascript">
+                            <option value="Microsoft .NET">
+                            <option value="Herramientas Office">
+                            <option value="Programación Web">
+                            <option value="Redes Informáticas">
+                            <option value="Seguridad Informática">
+                            <option value="Windows Server">
+                        </datalist>
+                    <button class="botondebuscador">BUSCAR</button>
+                </form>
+            </div>
+
+            <div id="carrito">
+                <img src="Imagenes/carrito.png" class="logocarrito" width="50" alt="">
+                <span id="numcarrito"></span>
+            </div>
+            
+        </div>
+
+        <div id="barradenavegacion">
+             <nav>   
+                <ul>
+                    <li><a href="inscripcion.html">Inscripcion</a></li>
+
+                    <li><a href="cursos.html">Cursos</a></li>
+
+                    <li><a href="calendario.html">Calendario</a></li>
+
+                    <li><a href="giftcard.html">Gift Card</a></li>   
+                    
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+      <article class="contenido">
+        <div class="vista-previa">
+            <div class="centrado">
+                <div id="tituloVistaPrevia">GIFT CARD para</div>
+                <div class="titulo">Destinatario</div>
+            </div>
+          <div class="precio arriba derecha">
+            <div id="precioVistaPrevia">$0000.-</div>
+          </div>
+        </div>
+        <div class="texto-centrado">VISTA PREVIA DE RESULTADO DE PERSONALIZACION</div>
+      </article>
+      <article class="contenido">
+        <form>
+            <span>Personalización de Giftcard</span>
+            <div>
+                <input class="input-personalizar" id="NombreDestinatario" type="text" name="NombreDestinatario" placeholder="Nombre Destinatario">
+            </div>
+            <label>Color</label>
+            <div class="contenedor-de-personalizacion">
+               <div>
+                 <div class="circulo-color red"></div>
+                 <input type="radio" name="color" value="red" checked="checked">
+                </div>
+                <div>
+                  <div class="circulo-color green"></div>
+                  <input type="radio" name="color" value="green">
+                </div>
+                <div>
+                  <div class="circulo-color blue"></div>
+                  <input type="radio" name="color" value="blue">
+                </div>
+                <div>
+                  <div class="circulo-color orange"></div>
+                  <input type="radio" name="color" value="orange">
+                </div>
+                <div>
+                  <div class="circulo-color pink"></div>
+                  <input type="radio" name="color" value="pink">
+                </div>
+            </div>
+            <label>Tamaño de fuente</label>
+            <div class="contenedor-de-personalizacion">              
+                <div class="tamanio-fuente">  
+                    <span class="fuente">20px</span>
+                    <input type="radio" name="tamanioFuente" value="20px">             
+                </div> 
+                <div class="tamanio-fuente">
+                   <span class="fuente">28px</span>
+                   <input type="radio" name="tamanioFuente" value="28px">
+                 </div> 
+                 <div class="tamanio-fuente">
+                   <span class="fuente">32px</span>
+                   <input type="radio" name="tamanioFuente" value="32px">
+                 </div> 
+                 <div class="tamanio-fuente">
+                   <span class="fuente">48px</span>
+                   <input type="radio" name="tamanioFuente" value="48px">
+                 </div> 
+                 <div class="tamanio-fuente">
+                   <span class="fuente">60px</span>
+                   <input type="radio" name="tamanioFuente" value="60px" checked="checked">
+                 </div>
+            </div>
+            <div class="contenedor-de-personalizacion">
+                <label>Monto $ </label>
+                <input class="input-personalizar" id="montoGiftcard" type="text" name="montoGiftcard">
+            </div>
+            <label>Ubicacion</label>
+            <div class="contenedor-de-personalizacion">
+                <div>
+                  <div class="ubicacion">
+                    <div class="abajo derecha"></div>
+                  </div>
+                  <input type="radio" name="ubicacion" value="abajo">
+                </div>
+                <div>
+                  <div class="ubicacion">
+                    <div class="izquierda"></div>                  
+                  </div>
+                  <input type="radio" name="ubicacion" value="arribaIzquierda">
+                </div>
+                <div>
+                  <div class="ubicacion">
+                    <div class="derecha"></div>                  
+                  </div>
+                  <input type="radio" name="ubicacion" value="arribaDerecha" checked="checked">
+                </div>
+            </div>
+            <label>Fondo</label>
+            <div class="contenedor-de-personalizacion">
+                <div>
+                  <div class="fondo-color red"></div>
+                  <input type="radio" name="fondo" value="red">
+                </div>
+                <div>
+                  <div class="fondo-color green"></div>
+                  <input type="radio" name="fondo" value="green" checked="checked">
+                </div>
+                <div>
+                  <div class="fondo-color blue"></div>
+                  <input type="radio" name="fondo" value="blue">
+                </div>
+                <div>
+                  <div class="fondo-color orange"></div>
+                  <input type="radio" name="fondo" value="orange">
+                </div>
+                <div>
+                  <div class="fondo-color pink"></div>
+                  <input type="radio" name="fondo" value="pink">
+                </div>
+            </div>
+            <button type="submit" class="boton">CONFIRMAR</button>
+        </form>
+      </article>
+    </section>
+    <footer>
+       <div class="divfooter">
+           <div class="nombreydni1">
+               <ul>
+                   <li>Tabatha Peralta 39873678</li>
+                   <br>
+                   <li>Leandro Aranda 36948258</li>
+                   <br>
+                   <li>Rocio Isaurralde 34412136</li>
+                   <br>
+                   <li>Leandro Martínez 38869671</li>
+               </ul>
+            </div>
+
+            <div class="cajamenuinferior">
+              <ul class="listamenu">
+                <li class="iteminf"><a href="index.html">Inicio</a></li>
+                <li class="iteminf"><a href="inscripcion.html">Inscripción</a></li>
+                <li class="iteminf"><a href="cursos.html">Cursos</a></li>
+                <li class="iteminf"><a href="calendario.html">Calendario</a></li>
+                <li class="iteminf"><a href="giftcard.html">Grif Card</a></li>
+                <li class="iteminf"><a href="Contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+            
+            <div class="cajaredes">
+
+              <div class="redes1">
+                <div class="facebook">
+                  <a href="https://www.facebook.com" class="ared"><img src="Imagenes/facebook.png" width="55" alt=""></a>
+                </div>
+
+                <div class="twitter">
+                  <a href="https://www.twitter.com" class="ared"><img src="Imagenes/twitter.png" width="55" alt=""></a>
+                </div>
+              </div>
+
+              <div class="redes2">
+                <div class="instagram">
+                  <a href="https://www.instagram.com" class="ared"><img src="Imagenes/instagram.png" width="55" alt=""></a>
+                </div>
+
+                <div class="youtube">
+                  <a href="https://www.youtube.com" class="ared"><img src="Imagenes/youtube.png" width="55" alt=""></a>
+                </div>
+              </div>
+
+              <div class="derechos">
+                <p>© 2019 Mortal Learning, Inc.</p>
+              </div>
+            </div>
+            
+       </div>
+
+   </footer>
+</body>
+</html>

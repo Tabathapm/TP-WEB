@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/estiloGeneral.css">
+    <link rel="stylesheet" href="CSS/estiloIndex.css">
+
+    <link rel="stylesheet" href="CSS/flexslider.css" type="text/css" media="screen">
+
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <!-- FlexSlider -->
+    <script defer src="js/jquery.flexslider-min.js"></script>
+    
+    <!--<script src="js/jquery-3.4.1.js"></script> -->
+    <script type="text/javascript" src="js/carrito.js"></script>
+    <title>INDEX</title>
+</head>
+<body>
+    <header>
+        <div id="barraDeArriba">
+            <div class="logoynombre">
+              <div id="logo">
+                <a href="index.html"><img src="Imagenes/logo.png" width="70" alt=""></a>
+              </div>
+
+              <div id="titulo">
+                <h2>Mortal Learning</h2>
+              </div>
+            </div>
+            
+            <div id="barradebusqueda">
+                <form action="">		    
+                    <input type="search" list="browsers" class="buscador"placeholder="Busca un curso de tu interes">
+                        <datalist id="browsers">
+                            <option value="Java">
+                            <option value="SQL Server">
+                            <option value="Android">
+                            <option value="Diseño Gráfico">
+                            <option value="iOS">
+                            <option value="Javascript">
+                            <option value="Microsoft .NET">
+                            <option value="Herramientas Office">
+                            <option value="Programación Web">
+                            <option value="Redes Informáticas">
+                            <option value="Seguridad Informática">
+                            <option value="Windows Server">
+                        </datalist>
+                    <button class="botondebuscador">BUSCAR</button>
+                </form>
+            </div>
+
+            <div id="carrito">
+                <img src="Imagenes/carrito.png" class="logocarrito" width="50" alt="">
+                <span id="numcarrito" onload="comprar()"></span>
+            </div>
+            
+        </div>
+
+        <div id="barradenavegacion">
+             <nav>   
+                <ul>
+                    <li><a href="inscripcion.html">Inscripcion</a></li>
+
+                    <li><a href="cursos.html">Cursos</a></li>
+
+                    <li><a href="calendario.html">Calendario</a></li>
+
+                    <li><a href="giftcard.html">Gift Card</a></li>   
+                    
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="Imagenes/aprende_a_tu_ritmo.jpg" />
+        </li>
+        <li>
+          <img src="Imagenes/SLIDER_TRUE 1.jpg" />
+        </li>
+        <li>
+          <img src="Imagenes/SLIDER_TRUE 2.jpg" />
+        </li>				
+      </ul>
+    </div>
+
+   <br><br>
+
+   <div class="pasos">
+        <div class="box paso1">
+            <div class="boxnumeropasos">
+              <img src="Imagenes/number-one-in-a-circle.png" width="50" alt="">
+            </div>
+            
+            <div class="textopasos">
+               <p>Hacé clic en Inscripcion.</p>
+            </div>
+        </div>
+
+       <div class="box paso2">
+            <div class="boxnumeropasos">
+              <img src="Imagenes/number-two-in-a-circle.png" width="50" alt="">
+            </div>
+
+           <div class="textopasos">
+               <p>Completá sus datos.</p>
+           </div>
+       </div>
+
+       <div class="box paso3">
+            <div class="boxnumeropasos">
+              <img src="Imagenes/number-three-in-a-circle.png" width="50" alt="">
+            </div>
+
+           <div>
+               <p>Disfrutá de tu subscripcion a Mortal Learning</p>
+           </div>
+       </div>
+   </div>
+   
+   <br><br>
+
+   <h2 id="cursosdestacados">CURSOS DESTACADOS</h2>
+
+   <br><br>
+
+   <div class="cursos">
+
+       <div class="curso1" id="curso">
+          <a href="#"><img src="Cursos/java.jpg" alt="">
+              <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso2" id="curso">
+          <a href="#"> <img src="Cursos/SQL server.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso3" id="curso">
+          <a href="#"><img src="Cursos/android.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso4" id="curso">
+          <a href="#"> <img src="Cursos/diseño_grafico.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso5" id="curso">
+          <a href="#"><img src="Cursos/ios.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso6" id="curso">
+          <a href="#"><img src="Cursos/javascript.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso7" id="curso">
+          <a href="#"><img src="Cursos/microsoft_net.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso8" id="curso">
+          <a href="#"><img src="Cursos/office.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso9" id="curso">
+          <a href="#"><img src="Cursos/programacion_web.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso10" id="curso">
+          <a href="#"><img src="Cursos/redes_informaticas.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso11" id="curso">
+          <a href="#"><img src="Cursos/seguridad_informatica.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+       <div class="curso12" id="curso">
+          <a href="#"><img src="Cursos/windows_server.jpg" alt="">
+            <div class="precio">$000.-</div></a>
+          <div class="horasnombre">
+            <div class="cajahoras">
+              <p class="numhr">60</p>
+              <p class="hs">hs</p>
+            </div>
+            <div class="cajanombre">
+              <p class="nombrecurso">Nombre del Curso</p>
+              <a href="#" class="detalle">Ver detalle</a>
+              <button type="button" onclick="comprar()" class="botoncomprar">Comprar</button>
+            </div>
+          </div>
+       </div>
+
+   </div>
+
+   <br><br><br><br>
+
+   <h2 id="mediosdepago">MEDIOS DE PAGO</h2>
+   <br><br>
+
+   <div id="medios">
+       <img src="Imagenes/medios_pago_03.png" alt="">
+   </div>
+
+   <br><br><br><br>
+   <footer>
+       <div class="divfooter">
+           <div class="nombreydni1">
+               <ul>
+                   <li>Tabatha Peralta 39873678</li>
+                   <br>
+                   <li>Leandro Aranda 36948258</li>
+                   <br>
+                   <li>Rocio Isaurralde 34412136</li>
+                   <br>
+                   <li>Leandro Martínez 38869671</li>
+               </ul>
+            </div>
+
+            <div class="cajamenuinferior">
+              <ul class="listamenu">
+                <li class="iteminf"><a href="index.html">Inicio</a></li>
+                <li class="iteminf"><a href="inscripcion.html">Inscripción</a></li>
+                <li class="iteminf"><a href="cursos.html">Cursos</a></li>
+                <li class="iteminf"><a href="calendario.html">Calendario</a></li>
+                <li class="iteminf"><a href="giftcard.html">Grif Card</a></li>
+                <li class="iteminf"><a href="Contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+            
+            <div class="cajaredes">
+
+              <div class="redes1">
+                <div class="facebook">
+                  <a href="https://www.facebook.com" class="ared"><img src="Imagenes/facebook.png" width="55" alt=""></a>
+                </div>
+
+                <div class="twitter">
+                  <a href="https://www.twitter.com" class="ared"><img src="Imagenes/twitter.png" width="55" alt=""></a>
+                </div>
+              </div>
+
+              <div class="redes2">
+                <div class="instagram">
+                  <a href="https://www.instagram.com" class="ared"><img src="Imagenes/instagram.png" width="55" alt=""></a>
+                </div>
+
+                <div class="youtube">
+                  <a href="https://www.youtube.com" class="ared"><img src="Imagenes/youtube.png" width="55" alt=""></a>
+                </div>
+              </div>
+
+              <div class="derechos">
+                <p>© 2019 Mortal Learning, Inc.</p>
+              </div>
+            </div>
+            
+       </div>
+
+   </footer>
+
+</body>
+
+</html>
