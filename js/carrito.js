@@ -21,9 +21,3 @@ function resetearClicks() {
     localStorage.removeItem("contador");
 }*/
 
-/********** SLIDER **********/
-$(window).load(function() {
-    $('.flexslider').flexslider({
-      animation: "slide",
-    });
-  });
